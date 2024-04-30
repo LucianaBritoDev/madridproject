@@ -1,0 +1,20 @@
+@charset "UTF-8";
+{
+    font-family: Arial, Helvetica;
+    /*Height: 100%; */
+}
+body{
+    background-image: linear-gradient(to right, white 0%, yellow 50%, red 100%);
+}
+p{
+    text-align: justify;
+}
+@keyframes mover {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(200px); }
+    100% { transform: translateX(0); }
+}
+.animated-image {
+    width: 500px;
+    animation: mover 4s ease infinite; /* Animação de 4 segundos, repetindo infinitamente */
+    border-radius: 30px;
